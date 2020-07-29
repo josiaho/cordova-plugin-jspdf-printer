@@ -4,7 +4,7 @@ A plugin for cordova to print a [jsPDF](https://github.com/MrRio/jsPDF) generate
 ## Installation
 Install the latest head version:
 
-    $ cordova plugin add cordova-plugin-jspdf-printer
+    $ cordova plugin add https://github.com/josiaho/cordova-plugin-jspdf-printer.git
 
 
 ## Usage
