@@ -35,3 +35,4 @@ printJSPDF.printPDF(doc.output(), 'DYMO LabelWriter 450 Turbo', 165.3, 287.85, f
     console.log(d)
 });
 ```
+( Bypasses the system print dialog )
