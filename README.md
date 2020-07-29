@@ -13,14 +13,14 @@ The plugin creates an object `printJSPDF` and is accessible after *deviceready* 
 ### printJSPDF.getPrinters([callback])
 ```javascript
 printJSPDF.getPrinters(function(x){
-	alert(x) // Array of Printer Names
+    alert(x) // Array of Printer Names
 });
 ```
 
 ### printJSPDF.getPrinterDescription(printerName[,callback])
 ```javascript
 printJSPDF.getPrinterDescription('printerName', function(d){
-	alert(d) // Description of Named Printer
+    alert(d) // Description of Named Printer
 });
 ```
 
@@ -28,10 +28,10 @@ printJSPDF.getPrinterDescription('printerName', function(d){
 ```javascript
 // Create jsPDF Document
 var doc = new jsPDF('p', 'mm', [165.3,287.85]);
-	doc.text('Sample Text', 15, 80);
+    doc.text('Sample Text', 15, 80);
 
 // Print jsPDF Document
 printJSPDF.printPDF(doc.output(), 'DYMO LabelWriter 450 Turbo', 165.3, 287.85, function(d){
-	console.log(d)
+    console.log(d)
 });
 ```
