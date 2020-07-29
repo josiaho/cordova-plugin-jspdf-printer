@@ -1,0 +1,24 @@
+{
+  "name": "cordova-plugin-jspdf-printer",
+  "version": "0.1.0",
+  "description": "Print a jsPDF generated PDF on OSX/macOS 10.9+",
+  "cordova": {
+    "id": "cordova-plugin-jspdf-printer",
+    "platforms": [
+      "osx"
+    ]
+  },
+  "keywords": [
+    "print",
+	"pdf",
+    "cordova-osx"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=6.0.0"
+    }
+  ],
+  "author": "Josiah Oslund",
+  "homepage": "https://josiaho.com"
+}

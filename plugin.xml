@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-jspdf-printer"
+        version="0.1.0">
+
+    <name>osxPrintPdf</name>
+
+    <description>Print a jsPDF generated PDF on macOS 10.9+</description>
+
+    <keywords>osx,print,pdf,jspdf</keywords>
+
+    <author>Josiah Oslund</author>
+
+    <engines>
+        <engine name="cordova" version=">=6.0.0" />
+    </engines>
+
+    <!-- js -->
+    <js-module src="www/printJSPDF.js" name="printJSPDF">
+        <clobbers target="printJSPDF" />
+    </js-module>
+
+    <!-- osx -->
+    <platform name="osx">
+        <config-file target="config.xml" parent="/*">
+            <feature name="printJSPDF">
+                <param name="osx-package" value="printJSPDF"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/osx/printJSPDF.h" />
+        <source-file src="src/osx/printJSPDF.m" />
+    </platform>
+
+</plugin>
